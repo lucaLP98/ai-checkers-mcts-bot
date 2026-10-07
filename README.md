@@ -111,6 +111,10 @@ Il modulo `tuning.c` implementa:
 
 ## Note tecniche
 
+## Documentazione
+La documentazione del progetto è visualizzabile al <a href="https://drive.google.com/file/d/18PzuwGCiHV7IP8JYtxG5ZdsnphKeFFFm/view?usp=sharing">LINK</a> indicato.
+Oltre alla descrizione delle strutture dati, degli algoritmi e delle funzioni implementate, la documentazione fornisce una diesamina teorica della MonteCarlo Tree Search.
+
 - **Bitboard 32-bit**: le 32 caselle scure sono enumerate da 0 (riga 0, col 1) a 31 (riga 7, col 6). Le righe pari usano colonne dispari, le righe dispari colonne pari.
 - **Look-up tables**: `sq_adj[32][4]` (adiacente) e `sq_ray[32][4][7]` (raggi per dame) pre-calcolate all'avvio.
 - **Thread AI**: `SDL_CreateThread` per non bloccare il rendering; comunicazione tramite `SDL_atomic_t`.
